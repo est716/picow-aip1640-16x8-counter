@@ -30,10 +30,7 @@
 ```text
 .
 ├── CMakeLists.txt        # CMake 建置配置文件
-├── src/
-│   ├── main.c            # 主程式與計數器邏輯
-│   ├── aip1640.c         # AiP1640 通訊與驅動實作
-│   └── aip1640.h         # AiP1640 標頭檔
+├── main.c            # 主程式與計數器邏輯
 └── README.md             # 專案說明文件
 ```
 
@@ -83,8 +80,7 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 add_executable(aip1640_counter
-    src/main.c
-    src/aip1640.c
+    main.c
 )
 
 # 連結 Pico SDK 必要函式庫
