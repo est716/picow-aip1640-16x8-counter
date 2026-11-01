@@ -20,10 +20,10 @@
 
 | Raspberry Pi Pico W 引腳 | AiP1640 引腳 | 說明 |
 | :--- | :--- | :--- |
-| **VBUS (5V)** 或 **3V3** | VDD | 電源供應（建議接 5V 以獲取較佳顯示亮度） |
+| **VBUS (5V)** | VDD | 電源供應（建議接 5V 以獲取較佳顯示亮度） |
 | **GND** | GND | 共地 |
-| **GPIO 0 (3V3)** (預設) | CLK | 時脈訊號 (Clock) |
-| **GPIO 1 (3V3)** (預設) | DIN / DATA | 資料輸入 (Data In) |
+| **GPIO 0** (預設) | CLK | 時脈訊號 (Clock) |
+| **GPIO 1** (預設) | DIN / DATA | 資料輸入 (Data In) |
 
 ## 專案結構 (Project Directory)
 
@@ -105,10 +105,10 @@ The AiP1640 uses a proprietary two-wire serial communication protocol. This proj
 
 | Raspberry Pi Pico W Pin | AiP1640 Pin | Description |
 | :--- | :--- | :--- |
-| **VBUS (5V)** or **3V3** | VDD | Power supply (5V is recommended for better display brightness) |
+| **VBUS (5V)** | VDD | Power supply (5V is recommended for better display brightness) |
 | **GND** | GND | Common ground |
-| **GPIO 0 (3V3)** (Default) | CLK | Clock signal |
-| **GPIO 1 (3V3)** (Default) | DIN / DATA | Data input |
+| **GPIO 0** (Default) | CLK | Clock signal |
+| **GPIO 1** (Default) | DIN / DATA | Data input |
 
 ## Project Directory
 
