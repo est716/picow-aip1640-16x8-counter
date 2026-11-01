@@ -2,7 +2,7 @@
 
 本專案使用 **Raspberry Pi Pico W**（採用 Raspberry Pi Pico C/C++ SDK）驅動基於 **AiP1640** 晶片的 16x8 LED Matrix ，實現數位計數器（Counter）功能。
 
-由於 AiP1640 採用非標準 I<sup>2</sup>C 的兩線序列協定，本專案透過 Pico SDK 之 GPIO 以 **Bit-Banging（軟體模擬時序）** 方式實作通訊控制。
+由於 AiP1640 採用類似 I<sup>2</sup>C 的兩線序列協定，本專案透過 Pico SDK 之 GPIO 以 **Bit-Banging（軟體模擬時序）** 方式實作通訊控制。
 
 ---
 
@@ -133,7 +133,7 @@ target_link_libraries(AiP1640_LED_Counter
 
 pico_add_extra_outputs(AiP1640_LED_Counter)
 ```
-
+備註：target_link_libraries 中，如果你不使用WiFi功能才加 pico_cyw43_arch_none。
 ---
 
 ## 通訊協定與原理 (Protocol & Implementation)
