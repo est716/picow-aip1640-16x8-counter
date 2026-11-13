@@ -35,7 +35,11 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(AiP1640_LED_Counter main.c )
+add_executable(AiP1640_LED_Counter 
+                main.c 
+                AiP1640_init.h
+                AiP1640_init.c
+                )
 
 pico_set_program_name(AiP1640_LED_Counter "AiP1640_LED_Counter")
 pico_set_program_version(AiP1640_LED_Counter "0.1")
