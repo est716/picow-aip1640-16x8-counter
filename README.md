@@ -30,6 +30,8 @@
 ```text
 .
 ├── CMakeLists.txt        # CMake 建置配置文件
+├── AiP1640_init.h        # AiP1640 相關函數定義
+├── AiP1640_init.c        # AiP1640 相關函數實作
 ├── main.c                # 主程式與計數器邏輯
 └── README.md             # 專案說明文件
 ```
@@ -115,6 +117,8 @@ The AiP1640 uses a proprietary two-wire serial communication protocol. This proj
 ```text
 .
 ├── CMakeLists.txt        # CMake build configuration
+├── AiP1640_init.h        # AiP1640 Related Function Definitions
+├── AiP1640_init.c        # AiP1640 Related Function Implementation
 ├── main.c                # Main program and counter logic
 └── README.md             # Project documentation
 ```
@@ -220,7 +224,11 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(AiP1640_LED_Counter main.c )
+add_executable(AiP1640_LED_Counter 
+                main.c 
+                AiP1640_init.h
+                AiP1640_init.c
+               )
 
 pico_set_program_name(AiP1640_LED_Counter "AiP1640_LED_Counter")
 pico_set_program_version(AiP1640_LED_Counter "0.1")
